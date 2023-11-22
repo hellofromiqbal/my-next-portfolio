@@ -1,9 +1,10 @@
 import Image from 'next/image'
+import Jumbotron from './ui/jumbotron/Jumbotron'
 
 export default function Home() {
   return (
-    <main className='bg-red-400'>
-      <h1>Hello world</h1>
+    <main>
+      <Jumbotron/>
     </main>
   )
 }
