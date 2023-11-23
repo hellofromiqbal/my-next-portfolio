@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
           <div className="basis-5/12 h-screen sticky top-0 pt-24">
             <Header/>
           </div>
-          <div className="basis-7/12 bg-slate-800 h-[8000px] pt-24">
+          <div className="basis-7/12 h-[8000px] pt-24 ps-24">
             {children}
           </div>
         </div>
