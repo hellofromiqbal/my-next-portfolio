@@ -10,9 +10,19 @@ const Header = () => {
         <h2 className='font-semibold text-xl text-secondary'>Web Developer</h2>
         <p className='text-tertiary w-3/4'>I build exceptional and accessible digital experiences for the web.</p>
       </div>
-      <div className='flex flex-row gap-2'>
-        <button className='bg-secondary hover:bg-transparent text-primary hover:text-secondary border border-transparent hover:border-secondary px-4 py-2 font-medium transition duration-100'>Resume</button>
-        <button className='bg-transparent text-secondary border border-secondary px-4 py-2 font-medium'>Contact</button>
+      <div className='flex flex-col gap-6 my-10'>
+        <Link href="#about" className='navLink flex items-center gap-2 w-max'>
+          <hr className='transition-all duration-150'/>
+          <span>ABOUT</span>
+        </Link>
+        <Link href="#projects" className='navLink flex items-center gap-2 w-max'>
+          <hr className='transition-all duration-150'/>
+          <span>PROJECTS</span>
+        </Link>
+        <Link href="#contact" className='navLink flex items-center gap-2 w-max'>
+          <hr className='transition-all duration-150'/>
+          <span>CONTACT</span>
+        </Link>
       </div>
       <div className='flex flex-row gap-4'>
         <Link href="https://github.com/hellofromiqbal">
