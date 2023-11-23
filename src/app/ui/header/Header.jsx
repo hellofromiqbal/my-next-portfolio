@@ -14,7 +14,7 @@ const Header = () => {
         <button className='bg-secondary hover:bg-transparent text-primary hover:text-secondary border border-transparent hover:border-secondary px-4 py-2 font-medium transition duration-100'>Resume</button>
         <button className='bg-transparent text-secondary border border-secondary px-4 py-2 font-medium'>Contact</button>
       </div>
-      <div className='flex flex-row gap-2'>
+      <div className='flex flex-row gap-4'>
         <Link href="https://github.com/hellofromiqbal">
           <FaGithub color='#94a3b8' size={25}/>
         </Link>
