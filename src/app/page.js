@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main>
       <Jumbotron/>
-      <About/>
+      {/* <About/> */}
     </main>
   )
 }
