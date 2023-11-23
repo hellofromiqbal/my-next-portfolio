@@ -19,9 +19,9 @@ const Header = () => {
           <hr className='transition-all duration-150'/>
           <span>EXPERIENCE</span>
         </Link>
-        <Link href="#contact" className='navLink flex items-center gap-2 w-max'>
+        <Link href="#projects" className='navLink flex items-center gap-2 w-max'>
           <hr className='transition-all duration-150'/>
-          <span>CONTACT</span>
+          <span>PROJECTS</span>
         </Link>
       </div>
       <div className='flex flex-row gap-4'>
