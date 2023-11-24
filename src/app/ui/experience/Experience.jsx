@@ -5,10 +5,10 @@ const Experience = () => {
   return (
     <section id='experience' className='flex flex-col gap-4'>
       <div className='flex flex-row gap-4 p-4 rounded-md bg-transparent hover:bg-slate-800 cursor-pointer transition duration-150'>
-        <div className='basis-1/3'>
+        <div className='md:basis-3/12 lg:basis-1/3'>
           <p className='text-tertiary text-xs font-semibold text-opacity-60 pt-1'>MARCH - JUNE 2023</p>
         </div>
-        <div className='basis-2/3 flex flex-col justify-start items-start gap-2'>
+        <div className='md:basis-9/12 lg:basis-2/3 flex flex-col justify-start items-start gap-2'>
           <h2 className='text-secondary font-semibold'>Front-End Web Developer - Gikslab</h2>
           <p className='text-sm text-tertiary'>Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.</p>
           <div className='flex flex-wrap gap-2 mt-2'>
@@ -25,10 +25,10 @@ const Experience = () => {
         </div>
       </div>
       <div className='flex flex-row gap-4 p-4 rounded-md bg-transparent hover:bg-slate-800 cursor-pointer transition duration-150'>
-        <div className='basis-1/3'>
+        <div className='md:basis-3/12 lg:basis-1/3'>
           <p className='text-tertiary text-xs font-semibold text-opacity-60 pt-1'>2021 - 2022</p>
         </div>
-        <div className='basis-2/3 flex flex-col justify-start items-start gap-2'>
+        <div className='md:basis-9/12 lg:basis-2/3 flex flex-col justify-start items-start gap-2'>
           <h2 className='text-secondary font-semibold'>Front-End Web Developer - Tokopedia</h2>
           <p className='text-sm text-tertiary'>Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.</p>
           <div className='flex flex-wrap gap-2 mt-2'>
