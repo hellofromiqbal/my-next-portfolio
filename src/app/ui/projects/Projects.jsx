@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 const Projects = () => {
   return (
-    <section id='projects' className='flex flex-col gap-4'>
-      <div className='lg:hidden px-4'>
+    <section id='projects' className='flex flex-col gap-4 px-4'>
+      <div className='lg:hidden sticky top-0 py-4 bg-primary z-10'>
         <h2 className='text-secondary text-base font-semibold'>PROJECTS</h2>
       </div>
       <div className='flex flex-col gap-4'>
-        <div className='flex flex-col-reverse md:flex-row gap-4 p-4 rounded-md bg-transparent lg:hover:bg-slate-800 cursor-pointer transition duration-150'>
+        <div className='flex flex-col-reverse md:flex-row gap-4 md:p-4 rounded-md bg-transparent lg:hover:bg-slate-800 cursor-pointer transition duration-150'>
           <div className='md:basis-3/12 lg:basis-1/3'>
             <div className='w-1/2 md:w-full h-[100px] relative border-2 border-opacity-60 border-tertiary rounded-md overflow-hidden'>
               <Image src="/images/projects-project1.jpg" alt='project1' className='object-cover' fill/>
@@ -20,7 +20,7 @@ const Projects = () => {
             <p className='text-sm text-tertiary'>Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.</p>
           </div>
         </div>
-        <div className='flex flex-col-reverse md:flex-row gap-4 p-4 rounded-md bg-transparent lg:hover:bg-slate-800 cursor-pointer transition duration-150'>
+        <div className='flex flex-col-reverse md:flex-row gap-4 md:p-4 rounded-md bg-transparent lg:hover:bg-slate-800 cursor-pointer transition duration-150'>
           <div className='md:basis-3/12 lg:basis-1/3'>
             <div className='w-1/2 md:w-full h-[100px] relative border-2 border-opacity-60 border-tertiary rounded-md overflow-hidden'>
               <Image src="/images/projects-project2.jpg" alt='project2' className='object-cover' fill/>
@@ -31,7 +31,7 @@ const Projects = () => {
             <p className='text-sm text-tertiary'>Web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>
           </div>
         </div>
-        <div className='flex flex-col-reverse md:flex-row gap-4 p-4 rounded-md bg-transparent lg:hover:bg-slate-800 cursor-pointer transition duration-150'>
+        <div className='flex flex-col-reverse md:flex-row gap-4 md:p-4 rounded-md bg-transparent lg:hover:bg-slate-800 cursor-pointer transition duration-150'>
           <div className='md:basis-3/12 lg:basis-1/3'>
             <div className='w-1/2 md:w-full h-[100px] relative border-2 border-opacity-60 border-tertiary rounded-md overflow-hidden'>
               <Image src="/images/projects-project3.jpg" alt='project3' className='object-cover' fill/>
