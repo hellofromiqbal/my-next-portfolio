@@ -3,12 +3,12 @@ import Link from 'next/link';
 
 const Experience = () => {
   return (
-    <section id='experience' className='flex flex-col gap-4 px-4'>
+    <section id='experience' className='flex flex-col gap-4'>
       <div className='lg:hidden sticky top-0 py-4 bg-primary'>
         <h2 className='text-secondary text-base font-semibold'>EXPERIENCE</h2>
       </div>
-      <div className='flex flex-col gap-4'>
-        <div className='flex flex-col md:flex-row gap-2 md:gap-4 md:p-4 rounded-md bg-transparent lg:hover:bg-slate-800 cursor-pointer transition duration-150'>
+      <div className='flex flex-col gap-4 md:gap-12'>
+        <div className='flex flex-col md:flex-row gap-2 md:gap-4 lg:p-4 rounded-md bg-transparent lg:hover:bg-slate-800 cursor-pointer transition duration-150'>
           <div className='md:basis-3/12 lg:basis-1/3'>
             <p className='text-tertiary text-xs font-semibold text-opacity-60 pt-1'>MARCH - JUNE 2023</p>
           </div>
@@ -28,7 +28,7 @@ const Experience = () => {
             </div>
           </div>
         </div>
-        <div className='flex flex-col md:flex-row gap-2 md:gap-4 md:p-4 rounded-md bg-transparent lg:hover:bg-slate-800 cursor-pointer transition duration-150'>
+        <div className='flex flex-col md:flex-row gap-2 md:gap-4 lg:p-4 rounded-md bg-transparent lg:hover:bg-slate-800 cursor-pointer transition duration-150'>
           <div className='md:basis-3/12 lg:basis-1/3'>
             <p className='text-tertiary text-xs font-semibold text-opacity-60 pt-1'>2021 - 2022</p>
           </div>
@@ -49,7 +49,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-      <Link href="#" className='w-max text-secondary font-semibold hover:underline underline-offset-4'>View Full Resume</Link>
+      <Link href="#" className='w-max text-secondary font-semibold hover:underline underline-offset-4 lg:px-4'>View Full Resume</Link>
     </section>
   )
 };
