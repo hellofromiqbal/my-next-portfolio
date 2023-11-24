@@ -43,7 +43,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <Link href="#" className='w-max text-secondary font-semibold hover:underline underline-offset-4 px-4'>View Full Project Archive</Link>
+      <Link href="#" className='w-max text-secondary font-semibold hover:underline underline-offset-4'>View Full Project Archive</Link>
     </section>
   )
 };
