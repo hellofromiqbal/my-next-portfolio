@@ -17,6 +17,13 @@ const ProjectCard = ({ item }) => {
           <MdOutlineArrowOutward color='#e2e8f0'/>
         </Link>
         <p className='text-sm text-tertiary'>{item.description}</p>
+        {item.technologies &&
+          <div className='flex flex-wrap gap-2 mt-2'>
+            {item.technologies.map((technology) => (
+              <span key={technology} className='px-2 py-1 bg-slate-700 text-xs text-secondary text-opacity-80 font-medium rounded-full'>{technology}</span>  
+            ))}
+          </div>
+        }
       </div>
     </div>
   )
