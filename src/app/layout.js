@@ -12,12 +12,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`bg-primary ${inter.className}`}>
+      <body className={`bg-primary ${inter.className} max-w-[1440px] mx-auto`}>
         <div className='md:px-20 lg:px-32 flex flex-row'>
           <div className="basis-5/12 h-screen sticky top-0 pt-24">
             <Header/>
           </div>
-          <div className="basis-7/12 h-[8000px] pt-24 px-10">
+          <div className="basis-7/12">
             {children}
           </div>
         </div>
