@@ -1,7 +1,7 @@
 import { FaGithub, FaFacebook, FaLinkedin } from 'react-icons/fa6';
 
 export const portfolioData = {
-  profile: {
+  header: {
     name: 'Muhammad Iqbal',
     profession: 'Full-Stack Web Developer',
     description: 'I build exceptional and accessible digital experiences for the web.',
