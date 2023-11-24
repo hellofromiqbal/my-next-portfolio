@@ -22,15 +22,9 @@ const Experience = () => {
               </span>
               <p className='text-sm text-tertiary'>{item.description}</p>
               <div className='flex flex-wrap gap-2 mt-2'>
-                <span className='px-2 py-1 bg-slate-700 text-xs text-secondary text-opacity-80 font-medium rounded-full'>Next.js</span>
-                <span className='px-2 py-1 bg-slate-700 text-xs text-secondary text-opacity-80 font-medium rounded-full'>React</span>
-                <span className='px-2 py-1 bg-slate-700 text-xs text-secondary text-opacity-80 font-medium rounded-full'>Express.js</span>
-                <span className='px-2 py-1 bg-slate-700 text-xs text-secondary text-opacity-80 font-medium rounded-full'>MongoDB</span>
-                <span className='px-2 py-1 bg-slate-700 text-xs text-secondary text-opacity-80 font-medium rounded-full'>Node.js</span>
-                <span className='px-2 py-1 bg-slate-700 text-xs text-secondary text-opacity-80 font-medium rounded-full'>JWT</span>
-                <span className='px-2 py-1 bg-slate-700 text-xs text-secondary text-opacity-80 font-medium rounded-full'>React Redux</span>
-                <span className='px-2 py-1 bg-slate-700 text-xs text-secondary text-opacity-80 font-medium rounded-full'>Tailwind</span>
-                <span className='px-2 py-1 bg-slate-700 text-xs text-secondary text-opacity-80 font-medium rounded-full'>Bootstrap</span>
+                {item.technologies.map((technology) => (
+                  <span key={technology} className='px-2 py-1 bg-slate-700 text-xs text-secondary text-opacity-80 font-medium rounded-full'>{technology}</span>  
+                ))}
               </div>
             </div>
           </div>
