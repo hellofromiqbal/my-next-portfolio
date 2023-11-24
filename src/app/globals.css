@@ -10,6 +10,7 @@ html {
 .navLink hr {
   width: 40px;
   color: #94a3b8;
+  opacity: .6;
   font-weight: bold;
 }
 
@@ -21,6 +22,7 @@ html {
 
 .navLink:hover hr {
   width: 60px;
+  opacity: 1;
 }
 
 .navLink:hover span {
