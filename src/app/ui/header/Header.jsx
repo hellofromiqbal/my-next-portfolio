@@ -7,7 +7,7 @@ const Header = () => {
     <header className='flex flex-col gap-4 px-6 md:px-4 lg:px-0'>
       <div className='flex flex-col gap-2'>
         <Link href="/" className='font-extrabold text-4xl text-secondary w-max'>Muhammad Iqbal</Link>
-        <h2 className='font-semibold text-xl text-secondary'>Web Developer</h2>
+        <h2 className='font-semibold text-lg text-secondary'>Full-Stack Web Developer</h2>
         <p className='text-tertiary md:w-1/2 lg:w-3/4'>I build exceptional and accessible digital experiences for the web.</p>
       </div>
       <div className='hidden lg:flex flex-col gap-6 my-10'>
