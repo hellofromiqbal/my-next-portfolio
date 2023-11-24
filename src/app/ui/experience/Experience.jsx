@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { portfolioData } from '@/app/data/portfolioData';
 import ExperienceCard from './experienceCard/ExperienceCard';
+import { MdOutlineArrowForward } from "react-icons/md";
 
 const Experience = () => {
   return (
@@ -14,7 +15,10 @@ const Experience = () => {
           <ExperienceCard key={item.company} item={item}/>
         ))}
       </div>
-      <Link href="#" className='w-max text-secondary font-semibold hover:underline underline-offset-4 lg:px-4'>View Full Resume</Link>
+      <Link href="#" className='w-max text-secondary font-semibold hover:underline underline-offset-4 mt-14 lg:mt-4 lg:px-4 flex items-center gap-2'>
+        <span>View Full Resume</span>
+        <MdOutlineArrowForward color='#e2e8f0'/>
+      </Link>
     </section>
   )
 };

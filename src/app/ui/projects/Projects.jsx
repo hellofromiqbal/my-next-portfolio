@@ -1,9 +1,8 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
-import { MdOutlineArrowOutward } from "react-icons/md";
 import { portfolioData } from '@/app/data/portfolioData';
 import ProjectCard from './projectCard/ProjectCard';
+import { MdOutlineArrowForward } from "react-icons/md";
 
 const Projects = () => {
   return (
@@ -16,7 +15,10 @@ const Projects = () => {
           <ProjectCard key={item.title} item={item}/>
         ))}
       </div>
-      <Link href="#" className='w-max text-secondary font-semibold hover:underline underline-offset-4 lg:px-4'>View Full Project Archive</Link>
+      <Link href="#" className='w-max text-secondary font-semibold hover:underline underline-offset-4 mt-14 lg:mt-4 lg:px-4 flex items-center gap-2'>
+        <span>View Full Project Archive</span>
+        <MdOutlineArrowForward color='#e2e8f0'/>
+      </Link>
     </section>
   )
 };
