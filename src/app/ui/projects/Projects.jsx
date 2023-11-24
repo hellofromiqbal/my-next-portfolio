@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Projects = () => {
   return (
@@ -16,7 +17,10 @@ const Projects = () => {
             </div>
           </div>
           <div className='md:basis-9/12 lg:basis-2/3 flex flex-col justify-start items-start gap-2'>
-            <h2 className='text-secondary font-semibold'>Build a Spotify Connected App</h2>
+            <span className='flex items-center gap-2'>
+              <h2 className='text-secondary font-semibold'>Build a Spotify Connected App</h2>
+              <MdOutlineArrowOutward color='#e2e8f0'/>
+            </span>
             <p className='text-sm text-tertiary'>Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.</p>
           </div>
         </div>
@@ -27,7 +31,10 @@ const Projects = () => {
             </div>
           </div>
           <div className='md:basis-9/12 lg:basis-2/3 flex flex-col justify-start items-start gap-2'>
-            <h2 className='text-secondary font-semibold'>Spotify Profile</h2>
+            <span className='flex items-center gap-2'>
+              <h2 className='text-secondary font-semibold'>Spotify Profile</h2>
+              <MdOutlineArrowOutward color='#e2e8f0'/>
+            </span>
             <p className='text-sm text-tertiary'>Web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>
           </div>
         </div>
@@ -38,7 +45,10 @@ const Projects = () => {
             </div>
           </div>
           <div className='md:basis-9/12 lg:basis-2/3 flex flex-col justify-start items-start gap-2'>
-            <h2 className='text-secondary font-semibold'>Koala Health</h2>
+            <span className='flex items-center gap-2'>
+              <h2 className='text-secondary font-semibold'>Koala Health</h2>
+              <MdOutlineArrowOutward color='#e2e8f0'/>
+            </span>
             <p className='text-sm text-tertiary'>Web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>
           </div>
         </div>
