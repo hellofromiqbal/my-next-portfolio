@@ -9,7 +9,7 @@ const Experience = () => {
       <div className='lg:hidden sticky top-0 py-4 bg-primary'>
         <h2 className='text-secondary text-base font-semibold'>EXPERIENCE</h2>
       </div>
-      <div className='flex flex-col gap-4 md:gap-12'>
+      <div className='flex flex-col gap-14 lg:gap-4'>
         {portfolioData['experience'].data.map((item) => (
           <ExperienceCard key={item.company} item={item}/>
         ))}

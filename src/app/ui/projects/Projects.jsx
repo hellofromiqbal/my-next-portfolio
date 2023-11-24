@@ -11,7 +11,7 @@ const Projects = () => {
       <div className='lg:hidden sticky top-0 py-4 bg-primary z-10'>
         <h2 className='text-secondary text-base font-semibold'>PROJECTS</h2>
       </div>
-      <div className='flex flex-col gap-4 md:gap-12'>
+      <div className='flex flex-col gap-14 lg:gap-4'>
         {portfolioData['projects'].data.map((item) => (
           <ProjectCard key={item.title} item={item}/>
         ))}
