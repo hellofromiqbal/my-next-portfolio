@@ -4,7 +4,7 @@ import Projects from "./ui/projects/Projects";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-24 my-24 px-10">
+    <main className="flex flex-col gap-24 my-24 ps-10">
       <About/>
       <Experience/>
       <Projects/>
