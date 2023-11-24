@@ -4,7 +4,7 @@ import { FaGithub, FaFacebook, FaLinkedin } from 'react-icons/fa6';
 
 const Header = () => {
   return (
-    <header className='flex flex-col gap-4 md:px-4 lg:px-0'>
+    <header className='flex flex-col gap-4 px-6 md:px-4 lg:px-0'>
       <div className='flex flex-col gap-2'>
         <h1 className='font-extrabold text-4xl text-secondary'>Muhammad Iqbal</h1>
         <h2 className='font-semibold text-xl text-secondary'>Web Developer</h2>
