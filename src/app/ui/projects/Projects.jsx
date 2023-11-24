@@ -15,7 +15,7 @@ const Projects = () => {
           <ProjectCard key={item.title} item={item}/>
         ))}
       </div>
-      <Link href="#" className='w-max text-secondary font-semibold hover:underline underline-offset-4 mt-14 lg:mt-4 lg:px-4 flex items-center gap-2'>
+      <Link href="#" className='w-max text-secondary font-semibold hover:underline underline-offset-4 mt-7 lg:mt-2 lg:px-4 flex items-center gap-2'>
         <span>View Full Project Archive</span>
         <MdOutlineArrowForward color='#e2e8f0'/>
       </Link>

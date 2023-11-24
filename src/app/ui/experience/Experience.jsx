@@ -15,7 +15,7 @@ const Experience = () => {
           <ExperienceCard key={item.company} item={item}/>
         ))}
       </div>
-      <Link href="#" className='w-max text-secondary font-semibold hover:underline underline-offset-4 mt-14 lg:mt-4 lg:px-4 flex items-center gap-2'>
+      <Link href="#" className='w-max text-secondary font-semibold hover:underline underline-offset-4 mt-7 lg:mt-2 lg:px-4 flex items-center gap-2'>
         <span>View Full Resume</span>
         <MdOutlineArrowForward color='#e2e8f0'/>
       </Link>
