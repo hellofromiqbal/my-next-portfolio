@@ -26,13 +26,13 @@ const Header = () => {
       </div>
       <div className='flex flex-row gap-4'>
         <Link href="https://github.com/hellofromiqbal">
-          <FaGithub color='#94a3b8' size={25}/>
+          <FaGithub className='socialMediaIcon transition-all duration-150' size={25}/>
         </Link>
         <Link href="https://github.com/hellofromiqbal">
-          <FaFacebook color='#94a3b8' size={25}/>
+          <FaFacebook className='socialMediaIcon transition-all duration-150' size={25}/>
         </Link>
         <Link href="https://github.com/hellofromiqbal">
-          <FaLinkedin color='#94a3b8' size={25}/>
+          <FaLinkedin className='socialMediaIcon transition-all duration-150' size={25}/>
         </Link>
       </div>
     </header>
