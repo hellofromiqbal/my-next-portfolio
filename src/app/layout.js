@@ -14,8 +14,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`bg-primary ${inter.className} max-w-[1440px] mx-auto`}>
-        <div className='md:px-8 lg:px-32 flex flex-row'>
-          <div className="basis-5/12 md:hidden h-screen sticky top-0 pt-24">
+        <div className='md:px-8 lg:px-32 flex flex-col lg:flex-row'>
+          <div className="basis-5/12 md:basis-full h-screen lg:sticky top-0 pt-24">
             <Header/>
           </div>
           <div className="basis-7/12 md:basis-full">
