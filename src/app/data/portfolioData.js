@@ -1,4 +1,26 @@
+import { FaGithub, FaFacebook, FaLinkedin } from 'react-icons/fa6';
+
 export const portfolioData = {
+  profile: {
+    name: 'Muhammad Iqbal',
+    profession: 'Full-Stack Web Developer',
+    description: 'I build exceptional and accessible digital experiences for the web.',
+    socialMedia: [
+      {
+        platform: 'Github',
+        icon: <FaGithub className='socialMediaIcon transition-all duration-150' size={25}/>,
+        url: "https://github.com/hellofromiqbal"},
+      {
+        platform: 'Facebook',
+        icon: <FaFacebook className='socialMediaIcon transition-all duration-150' size={25}/>,
+        url: "https://facebook.com/hellofromiqbal"},
+      {
+        platform: 'LinkedIn',
+        icon: <FaLinkedin className='socialMediaIcon transition-all duration-150' size={25}/>,
+        url: "https://linkedin.com/in/hellofromiqbal"
+      }
+    ]
+  },
   experience: {
     data: [
       {

@@ -1,16 +1,19 @@
 import React from 'react';
 import Link from 'next/link';
 import { FaGithub, FaFacebook, FaLinkedin } from 'react-icons/fa6';
+import { portfolioData } from '@/app/data/portfolioData';
 
 const Header = () => {
+  const profile = portfolioData['profile'];
+
   return (
     <header className='flex flex-col gap-4 px-6 md:px-4 lg:px-0'>
       <div className='flex flex-col gap-2'>
-        <Link href="/" className='font-extrabold text-4xl text-secondary w-max'>Muhammad Iqbal</Link>
-        <h2 className='font-semibold text-lg text-secondary'>Full-Stack Web Developer</h2>
-        <p className='text-tertiary md:w-1/2 lg:w-3/4'>I build exceptional and accessible digital experiences for the web.</p>
+        <Link href="/" className='font-extrabold text-4xl text-secondary w-max'>{profile.name}</Link>
+        <h2 className='font-semibold text-lg text-secondary'>{profile.profession}</h2>
+        <p className='text-tertiary md:w-1/2 lg:w-3/4'>{profile.description}</p>
       </div>
-      <div className='hidden lg:flex flex-col gap-6 my-10'>
+      <nav className='hidden lg:flex flex-col gap-6 my-10'>
         <Link href="#about" className='navLink flex items-center gap-2 w-max'>
           <hr className='transition-all duration-150'/>
           <span>ABOUT</span>
@@ -23,17 +26,11 @@ const Header = () => {
           <hr className='transition-all duration-150'/>
           <span>PROJECTS</span>
         </Link>
-      </div>
+      </nav>
       <div className='flex flex-row gap-4'>
-        <Link href="https://github.com/hellofromiqbal">
-          <FaGithub className='socialMediaIcon transition-all duration-150' size={25}/>
-        </Link>
-        <Link href="https://github.com/hellofromiqbal">
-          <FaFacebook className='socialMediaIcon transition-all duration-150' size={25}/>
-        </Link>
-        <Link href="https://github.com/hellofromiqbal">
-          <FaLinkedin className='socialMediaIcon transition-all duration-150' size={25}/>
-        </Link>
+        {profile.socialMedia.map((item) => (
+          <Link key={item.platform} href={item.url}>{item.icon}</Link>
+        ))}
       </div>
     </header>
   )
